@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ora Weather — Beautiful Weather for iOS</title>
+    <meta name="description" content="Ora Weather is a beautifully crafted iOS weather app by Impala Studios. Elegant forecasts, real-time conditions, and a stunning interface. Coming soon.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="8" fill="url(#sun-gradient)"/>
+                    <g stroke="url(#ray-gradient)" stroke-width="2" stroke-linecap="round">
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="16" y1="26" x2="16" y2="30"/>
+                        <line x1="2" y1="16" x2="6" y2="16"/>
+                        <line x1="26" y1="16" x2="30" y2="16"/>
+                        <line x1="6.1" y1="6.1" x2="8.9" y2="8.9"/>
+                        <line x1="23.1" y1="23.1" x2="25.9" y2="25.9"/>
+                        <line x1="6.1" y1="25.9" x2="8.9" y2="23.1"/>
+                        <line x1="23.1" y1="8.9" x2="25.9" y2="6.1"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="sun-gradient" x1="8" y1="8" x2="24" y2="24">
+                            <stop stop-color="#f59e0b"/>
+                            <stop offset="1" stop-color="#f97316"/>
+                        </linearGradient>
+                        <linearGradient id="ray-gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop stop-color="#fbbf24"/>
+                            <stop offset="1" stop-color="#f59e0b"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Ora Weather</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-badge">Coming Soon on iOS</p>
+            <h1 class="hero-title">Weather, <br>beautifully <span class="text-gradient">reimagined</span></h1>
+            <p class="hero-subtitle">Ora Weather brings you elegant forecasts, real-time conditions, and a stunning interface — crafted with care for every detail.</p>
+            <div class="hero-actions">
+                <a href="#notify" class="btn btn-primary">Get Notified</a>
+                <a href="#features" class="btn btn-ghost">Learn More</a>
+            </div>
+        </div>
+        <!-- Phone Mockup -->
+        <div class="hero-phone">
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="phone-status-bar">
+                        <span>9:41</span>
+                    </div>
+                    <div class="phone-weather">
+                        <p class="phone-location">Amsterdam</p>
+                        <p class="phone-temp">18&deg;</p>
+                        <p class="phone-condition">Partly Cloudy</p>
+                        <div class="phone-weather-icon">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <circle cx="26" cy="26" r="10" fill="#fbbf24"/>
+                                <path d="M38 34a12 12 0 0 0-23.4 0A10 10 0 0 0 16 54h24a10 10 0 0 0 2-19.8Z" fill="rgba(255,255,255,0.9)"/>
+                            </svg>
+                        </div>
+                        <div class="phone-details">
+                            <div class="phone-detail">
+                                <span class="phone-detail-label">Wind</span>
+                                <span class="phone-detail-value">12 km/h</span>
+                            </div>
+                            <div class="phone-detail">
+                                <span class="phone-detail-label">Humidity</span>
+                                <span class="phone-detail-value">64%</span>
+                            </div>
+                            <div class="phone-detail">
+                                <span class="phone-detail-label">UV Index</span>
+                                <span class="phone-detail-value">5</span>
+                            </div>
+                        </div>
+                        <div class="phone-forecast">
+                            <div class="phone-forecast-item">
+                                <span class="phone-forecast-day">Mon</span>
+                                <span class="phone-forecast-icon">&#9728;</span>
+                                <span class="phone-forecast-temp">21&deg;</span>
+                            </div>
+                            <div class="phone-forecast-item">
+                                <span class="phone-forecast-day">Tue</span>
+                                <span class="phone-forecast-icon">&#9925;</span>
+                                <span class="phone-forecast-temp">17&deg;</span>
+                            </div>
+                            <div class="phone-forecast-item">
+                                <span class="phone-forecast-day">Wed</span>
+                                <span class="phone-forecast-icon">&#9926;</span>
+                                <span class="phone-forecast-temp">14&deg;</span>
+                            </div>
+                            <div class="phone-forecast-item">
+                                <span class="phone-forecast-day">Thu</span>
+                                <span class="phone-forecast-icon">&#9728;</span>
+                                <span class="phone-forecast-temp">22&deg;</span>
+                            </div>
+                            <div class="phone-forecast-item">
+                                <span class="phone-forecast-day">Fri</span>
+                                <span class="phone-forecast-icon">&#9728;</span>
+                                <span class="phone-forecast-temp">24&deg;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <p class="section-label">Features</p>
+            <h2 class="section-title">Designed for the way <br>you check the weather</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Data</h3>
+                    <p class="feature-desc">Hyper-accurate forecasts updated every minute, so you always know what's coming.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 15h4l3-8 4 16 3-8h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Live Radar</h3>
+                    <p class="feature-desc">Interactive precipitation maps with animated layers to track storms in real time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Alerts</h3>
+                    <p class="feature-desc">Personalised notifications for rain, temperature changes, and severe weather events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Beautiful Widgets</h3>
+                    <p class="feature-desc">Gorgeous home screen widgets that blend seamlessly with your iPhone aesthetic.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Dark Mode</h3>
+                    <p class="feature-desc">A carefully tuned dark theme that looks stunning and is easy on your eyes at night.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Privacy First</h3>
+                    <p class="feature-desc">Your location data stays on your device. No tracking, no ads, no compromises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / CTA Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-inner">
+                <p class="section-label">About</p>
+                <h2 class="section-title">Crafted by Impala Studios</h2>
+                <p class="about-text">We believe checking the weather should feel delightful. Ora Weather is being built with obsessive attention to design, performance, and accuracy. We can't wait to share it with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notify Section -->
+    <section id="notify" class="notify">
+        <div class="container">
+            <div class="notify-card">
+                <h2 class="notify-title">Be the first to know</h2>
+                <p class="notify-text">Sign up and we'll let you know the moment Ora Weather launches on the App Store.</p>
+                <form class="notify-form" onsubmit="handleSubmit(event)">
+                    <input type="email" placeholder="your@email.com" required class="notify-input" aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Notify Me</button>
+                </form>
+                <p class="notify-disclaimer">No spam, ever. We'll only email you about the launch.</p>
+                <p class="notify-success" id="notify-success" hidden>Thanks! We'll keep you posted.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="8" fill="url(#sun-gradient-f)"/>
+                    <g stroke="url(#ray-gradient-f)" stroke-width="2" stroke-linecap="round">
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="16" y1="26" x2="16" y2="30"/>
+                        <line x1="2" y1="16" x2="6" y2="16"/>
+                        <line x1="26" y1="16" x2="30" y2="16"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="sun-gradient-f" x1="8" y1="8" x2="24" y2="24">
+                            <stop stop-color="#f59e0b"/>
+                            <stop offset="1" stop-color="#f97316"/>
+                        </linearGradient>
+                        <linearGradient id="ray-gradient-f" x1="0" y1="0" x2="32" y2="32">
+                            <stop stop-color="#fbbf24"/>
+                            <stop offset="1" stop-color="#f59e0b"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Ora Weather</span>
+            </div>
+            <p class="footer-copy">&copy; 2026 Impala Studios. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const success = document.getElementById('notify-success');
+            form.hidden = true;
+            success.hidden = false;
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', e => {
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .about-inner, .notify-card').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
