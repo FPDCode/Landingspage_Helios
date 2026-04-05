@@ -239,42 +239,127 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* ===== Phone Mockup ===== */
+/* ===== iPhone 17 Mockup ===== */
 .hero-phone {
     position: relative;
     z-index: 1;
     margin-top: 60px;
 }
 
-.phone-frame {
-    width: 280px;
-    height: 560px;
-    background: #1a1a2e;
-    border-radius: 40px;
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    box-shadow:
-        0 40px 80px rgba(0, 0, 0, 0.5),
-        0 0 0 1px rgba(255, 255, 255, 0.05),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+.iphone-frame {
+    position: relative;
+    width: 290px;
+    height: 600px;
+    background: #1b1b1f;
+    border-radius: 52px;
+    padding: 8px;
     margin: 0 auto;
+    box-shadow:
+        0 50px 100px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.08),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    /* Titanium-like edge highlight */
+    border: 2px solid #2a2a30;
 }
 
-.phone-screen {
+/* Side buttons */
+.iphone-btn {
+    position: absolute;
+    background: #2a2a30;
+    border-radius: 2px;
+}
+
+.iphone-btn-silent {
+    width: 3px;
+    height: 28px;
+    left: -3px;
+    top: 120px;
+    border-radius: 3px 0 0 3px;
+}
+
+.iphone-btn-vol-up {
+    width: 3px;
+    height: 44px;
+    left: -3px;
+    top: 170px;
+    border-radius: 3px 0 0 3px;
+}
+
+.iphone-btn-vol-down {
+    width: 3px;
+    height: 44px;
+    left: -3px;
+    top: 224px;
+    border-radius: 3px 0 0 3px;
+}
+
+.iphone-btn-power {
+    width: 3px;
+    height: 64px;
+    right: -3px;
+    top: 185px;
+    border-radius: 0 3px 3px 0;
+}
+
+.iphone-screen {
+    position: relative;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, #1e3a5f 0%, #0f2444 50%, #0a1628 100%);
-    padding: 16px 20px;
+    border-radius: 44px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    padding: 0 18px 18px;
+}
+
+/* Dynamic Island */
+.dynamic-island {
+    width: 120px;
+    height: 34px;
+    background: #000;
+    border-radius: 20px;
+    margin: 10px auto 0;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .phone-status-bar {
-    text-align: center;
-    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6px 12px;
+    font-size: 0.72rem;
     font-weight: 600;
-    padding: 8px 0 16px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.status-time {
+    font-weight: 700;
+    font-size: 0.78rem;
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-icons svg {
+    opacity: 0.85;
+}
+
+/* Home indicator */
+.iphone-home-indicator {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
 }
 
 .phone-weather {
@@ -602,9 +687,20 @@ body {
         gap: 20px;
     }
 
-    .phone-frame {
-        width: 240px;
-        height: 480px;
+    .iphone-frame {
+        width: 250px;
+        height: 520px;
+        border-radius: 44px;
+    }
+
+    .iphone-screen {
+        border-radius: 36px;
+        padding: 0 14px 14px;
+    }
+
+    .dynamic-island {
+        width: 100px;
+        height: 28px;
     }
 
     .phone-temp {
