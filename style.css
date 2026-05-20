@@ -129,14 +129,14 @@ h3 { font-size: 1.3rem; }
 /* ===== Navbar ===== */
 .navbar {
     position: fixed;
-    top: 0;
+    top: -50px;
     left: 0;
     right: 0;
     z-index: 1000;
     background: var(--color-bg-light);
     backdrop-filter: blur(10px);
     transition: box-shadow var(--transition), background var(--transition);
-    padding-top: env(safe-area-inset-top, 0px);
+    padding-top: calc(50px + env(safe-area-inset-top, 0px));
 }
 
 .navbar.scrolled {
