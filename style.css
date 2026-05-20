@@ -213,7 +213,7 @@ h3 { font-size: 1.3rem; }
 /* ===== Hero ===== */
 .hero {
     position: relative;
-    min-height: 230vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     padding-top: 72px;
