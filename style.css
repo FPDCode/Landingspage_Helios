@@ -238,7 +238,7 @@ h3 { font-size: 1.3rem; }
     background: var(--color-pink);
     opacity: 0.3;
     bottom: 10%;
-    left: 30%;
+    left: -5%;
 }
 
 .shape-mint {
@@ -630,6 +630,10 @@ h3 { font-size: 1.3rem; }
 }
 
 @media (max-width: 768px) {
+    .hero-bg-shapes {
+        display: none;
+    }
+
     .nav-toggle {
         display: flex;
     }
