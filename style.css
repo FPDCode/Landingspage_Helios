@@ -345,14 +345,11 @@ h3 { font-size: 1.3rem; }
 
 .provoet-badge {
     text-align: center;
-    padding: 40px;
-    background: var(--color-bg-light);
-    border-radius: var(--radius);
 }
 
 .provoet-logo {
     width: 100%;
-    max-width: 280px;
+    max-width: 196px;
     height: auto;
 }
 
