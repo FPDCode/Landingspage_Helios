@@ -350,23 +350,10 @@ h3 { font-size: 1.3rem; }
     border-radius: var(--radius);
 }
 
-.provoet-icon {
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: center;
-}
-
-.provoet-text {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-mint-dark);
-}
-
-.provoet-sub {
-    display: block;
-    font-size: 0.85rem;
-    color: var(--color-text-light);
+.provoet-logo {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
 }
 
 /* ===== Behandelingen Section ===== */
