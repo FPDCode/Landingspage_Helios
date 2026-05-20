@@ -34,6 +34,7 @@ body {
     line-height: 1.7;
     background: var(--color-white);
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
 }
 
 .container {
@@ -131,12 +132,14 @@ h3 { font-size: 1.3rem; }
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-bg-light);
     backdrop-filter: blur(10px);
-    transition: box-shadow var(--transition);
+    transition: box-shadow var(--transition), background var(--transition);
+    padding-top: env(safe-area-inset-top, 0px);
 }
 
 .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -210,7 +213,7 @@ h3 { font-size: 1.3rem; }
 /* ===== Hero ===== */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 230vh;
     display: flex;
     align-items: center;
     padding-top: 72px;
